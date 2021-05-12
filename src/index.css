@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.toggle-button{
+  border-radius: 15px;
+  background-color: rgb(233 233 233);
+  cursor: pointer;
+  padding: 10px;
+  border: none
+}
+
+.toggle-button:hover {
+  background-color: rgb(0, 151, 131);
+  color:white
+}
+
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1{
+  color: white;
+}
+
+.normal-mode {
+  background-color: white
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  min-height: 100vh
+}
+
+.note.new{
+  background-color: rgb(129 181 206)
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 150px;
+  background-color:rgb(0, 151, 131);
+  color: whitesmoke;
+  white-space: pre-wrap;
+}
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(129 181 206)
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.save{
+  background-color: #028876;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: whitesmoke
+}
+
+.save:hover {
+  background-color: rgb(0, 80, 72);
+  cursor: pointer
+}
+
+.delete-icon{
+  cursor: pointer
+}
+
+.search{
+  display:flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 1.5em
+}
+
+.search input{
+  border: none;
+  background-color: rgb(233, 233, 233);
+  width: 100%
+}
+
+.search input:focus{
+  outline: none;
 }
